@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 78" width="300" height="78" role="img" aria-label="DAISY H.R. Solution Pvt. Ltd.">
+  <title>DAISY H.R. Solution Pvt. Ltd.</title>
+
+  <!-- Daisy mark: eight gold petals around a navy core, set in a ring -->
+  <g transform="translate(39 39)">
+    <circle r="35" fill="none" stroke="#C79A4A" stroke-width="1.5" opacity=".55"/>
+    <g fill="#C79A4A">
+      <g id="petal-set">
+        <ellipse cx="0" cy="-19" rx="6.4" ry="13"/>
+        <ellipse cx="0" cy="-19" rx="6.4" ry="13" transform="rotate(45)"/>
+        <ellipse cx="0" cy="-19" rx="6.4" ry="13" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-19" rx="6.4" ry="13" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-19" rx="6.4" ry="13" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-19" rx="6.4" ry="13" transform="rotate(225)"/>
+        <ellipse cx="0" cy="-19" rx="6.4" ry="13" transform="rotate(270)"/>
+        <ellipse cx="0" cy="-19" rx="6.4" ry="13" transform="rotate(315)"/>
+      </g>
+    </g>
+    <circle r="8.6" fill="#0F2747"/>
+    <circle r="3.4" fill="#C79A4A"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="88" y="38"
+        font-family="Playfair Display, Georgia, serif"
+        font-size="30" font-weight="700" letter-spacing="1.6" fill="#0F2747">DAISY</text>
+  <text x="88" y="57"
+        font-family="Poppins, Helvetica, Arial, sans-serif"
+        font-size="10.5" font-weight="500" letter-spacing="2.6" fill="#C79A4A">H.R. SOLUTION</text>
+  <text x="88" y="70"
+        font-family="Poppins, Helvetica, Arial, sans-serif"
+        font-size="7.6" font-weight="400" letter-spacing="1.9" fill="#5b6472">PVT. LTD. &#183; KATHMANDU, NEPAL</text>
+</svg>
