@@ -3862,3 +3862,11 @@ section#partners .slick-slide>div {
 html {
     overflow-x: hidden;
 }
+.slick-slide {
+   
+   margin-top: 10px;
+
+   
+    margin-right:5px;
+    margin-left:5px;
+}
