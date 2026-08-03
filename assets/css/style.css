@@ -980,7 +980,7 @@ p {
     font-size: .9rem;
     font-weight: 500;
     letter-spacing: .01em;
-    color: black;
+    color: #ffffff;
     padding: 10px 16px;
     transition: color .3s var(--ease);
 }
@@ -3523,11 +3523,12 @@ select.form-control-daisy {
 }
 
 
-       @media (min-width: 1200px) {
-            .container {
-                max-width: 1321px;
-            }
-        }
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1321px;
+    }
+}
+
 /* ==========================================================================
    29. RESPONSIVE BREAKPOINTS
    Ordered largest → smallest, matching Bootstrap 4's grid tiers.
@@ -3853,20 +3854,23 @@ select.form-control-daisy {
 p.hero__text.hero__anim {
     display: none;
 }
+
 section#partners .slick-slide>div {
     height: 158px;
     display: flex;
     flex-direction: column;
     margin-top: 22px;
 }
+
 html {
     overflow-x: hidden;
 }
-.slick-slide {
-   
-   margin-top: 10px;
 
-   
-    margin-right:5px;
-    margin-left:5px;
+.slick-slide {
+
+    margin-top: 10px;
+
+
+    margin-right: 5px;
+    margin-left: 5px;
 }
