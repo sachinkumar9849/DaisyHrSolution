@@ -862,7 +862,7 @@ p {
 
 /* Inner pages: header sits on a solid navy band from the start */
 .site-header--solid {
-    background: var(--navy);
+    background: #ffffff;
 }
 
 .site-header.is-stuck {
@@ -980,7 +980,7 @@ p {
     font-size: .9rem;
     font-weight: 500;
     letter-spacing: .01em;
-    color: #ffffff;
+    color: #000000;
     padding: 10px 16px;
     transition: color .3s var(--ease);
 }
@@ -3873,4 +3873,210 @@ html {
 
     margin-right: 5px;
     margin-left: 5px;
+}
+
+/* ==========================================================================
+   29a. SERVICE DETAIL STYLING
+   ========================================================================== */
+
+.scroll-margin-top {
+    scroll-margin-top: 130px;
+}
+
+/* Sidebar Wrapper */
+.service-sidebar-wrapper {
+    transition: var(--transition);
+}
+
+.service-sidebar-nav {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 30px 24px;
+    box-shadow: var(--shadow-xs);
+    border: 1px solid var(--border);
+}
+
+.service-sidebar-title {
+    color: var(--navy);
+    font-weight: 700;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+    font-family: var(--font-body);
+}
+
+.service-sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-sidebar-list li {
+    margin-bottom: 12px;
+}
+
+.service-sidebar-list li:last-child {
+    margin-bottom: 0;
+}
+
+.service-sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 14px 18px;
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    font-weight: 500;
+    font-family: var(--font-body);
+    transition: var(--transition);
+    text-decoration: none !important;
+    background: var(--cream);
+    border-left: 3px solid transparent;
+}
+
+.service-sidebar-link:hover {
+    color: var(--navy);
+    background: var(--white);
+    border-left-color: var(--gold-400);
+    box-shadow: var(--shadow-xs);
+    transform: translateX(4px);
+}
+
+.service-sidebar-link.active {
+    color: var(--white);
+    background: var(--navy);
+    border-left-color: var(--gold);
+    box-shadow: var(--shadow-sm);
+}
+
+.service-sidebar-link.active:hover {
+    transform: none;
+}
+
+.service-sidebar-icon {
+    font-size: 1.1rem;
+    margin-right: 14px;
+    width: 20px;
+    text-align: center;
+}
+
+.service-sidebar-link.active .service-sidebar-icon {
+    color: var(--gold);
+}
+
+/* Sidebar CTA Card */
+.service-sidebar-cta {
+    background: var(--navy) !important;
+    border-radius: var(--radius);
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--border-dark);
+}
+
+.service-sidebar-cta::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(199, 154, 74, 0.15) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+/* Detail Panel Content */
+.detail-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.detail-header__icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.bg-gold-gradient {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-600) 100%);
+}
+
+.border-left-gold {
+    border-left: 4px solid var(--gold);
+}
+
+.bg-light-cream {
+    background-color: var(--cream);
+    border: 1px solid var(--border);
+}
+
+.detail-body {
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.detail-body:hover {
+    box-shadow: var(--shadow) !important;
+}
+
+.detail-feature-list li {
+    font-family: var(--font-body);
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+.detail-extra {
+    transition: var(--transition);
+}
+
+/* Responsive adjustment for Mobile and Tablet */
+@media (max-width: 991.98px) {
+    .service-sidebar-wrapper.sticky-top {
+        position: relative !important;
+        top: 0 !important;
+    }
+
+    .service-sidebar-nav {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .service-sidebar-list {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 10px;
+        padding-bottom: 8px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .service-sidebar-list li {
+        margin-bottom: 0;
+        flex: 0 0 auto;
+    }
+
+    .service-sidebar-link {
+        padding: 10px 16px;
+        white-space: nowrap;
+        border-left: none;
+        border-bottom: 3px solid transparent;
+    }
+
+    .service-sidebar-link:hover {
+        transform: translateY(-2px);
+        border-bottom-color: var(--gold-400);
+    }
+
+    .service-sidebar-link.active {
+        border-bottom-color: var(--gold);
+    }
+
+    .service-sidebar-cta {
+        display: none !important; /* Hide sidebar CTA on tablets/phones to save space */
+    }
 }
